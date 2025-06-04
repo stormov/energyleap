@@ -94,9 +94,7 @@ class EnergyLeapPlugin : JavaPlugin(), Listener, CoroutineScope {
         launch {
             delay(500L)
 
-            Bukkit.getScheduler().scheduleSyncDelayedTask(this@EnergyLeapPlugin) {
-                player.teleport(loc)
-            }
+            Bukkit.getScheduler().scheduleSyncDelayedTask(this@EnergyLeapPlugin) { player.teleport(loc) }
 
             player.takeEnergy(genericConfig.getDouble("main.energy-cost-per-jump"))
         }
