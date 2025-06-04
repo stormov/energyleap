@@ -1,0 +1,8 @@
+name: EnergyLeap
+main: ru.stormov.energyleap.EnergyLeapPlugin
+version: 1.0
+api-version: 1.21
+author: "stormov"
+commands:
+  energyleap:
+    permission: "energyleap.command.use"

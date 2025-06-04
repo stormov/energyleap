@@ -1,0 +1,15 @@
+[versions]
+kotlin = "2.1.10"
+minecraft = "1.21"
+bukkit = "1.21.4-R0.1-SNAPSHOT"
+
+[libraries]
+
+minedown = "de.themoep:minedown-adventure:1.7.1-SNAPSHOT"
+
+kotlinx-coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0"
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+shadow = "com.gradleup.shadow:8.3.5"
+paper = "io.papermc.paperweight.userdev:2.0.0-beta.13"
