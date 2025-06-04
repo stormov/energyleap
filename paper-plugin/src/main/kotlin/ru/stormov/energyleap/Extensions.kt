@@ -10,8 +10,6 @@ fun Player.takeEnergy(amount: Double) = EnergyLeapPlugin.instance.energy.replace
 fun Player.isUnbound() : Boolean = EnergyLeapPlugin.instance.genericConfig.getStringList("main.unbound").contains(this.uniqueId.toString())
 
 fun Player.unbound() {
-    // mega shit
-
     if(this.isUnbound()) return
 
     val current = EnergyLeapPlugin.instance.genericConfig.getStringList("unbound")
